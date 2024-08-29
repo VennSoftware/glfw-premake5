@@ -4,8 +4,7 @@ project "GLFW"
 	staticruntime "off"
 	warnings "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	INCLUDE_DIRS["GLFW"] = "vendor/glfw/include"
 
 	files
 	{
